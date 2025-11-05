@@ -48,6 +48,7 @@ public class MyWordCount {
             } catch (TimeoutException e) {
                 System.out.println("A task took too long!");
                 future.cancel(true); // Interrupt if running
+                break;
             }
         }
 
